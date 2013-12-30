@@ -18,7 +18,9 @@
   },
   "devDependencies": {
     "grunt": "~0.4.2",
-    "grunt-contrib-jshint": "~0.8.0"
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-coffee": "~0.8.0",
+    "grunt-coffeelint": "~0.0.8"
   },
   "keywords": [
     "log4js",

@@ -20,7 +20,7 @@ xmppAppender = (config, layout) ->
 #{data.jid.user}@#{data.jid.domain}/#{data.jid.resource}"
 
     body = ''
-    for i in loggingEvents.length
+    for i in loggingEvents
       body += layout(i) + '\n'
 
     loggingEvents = null

@@ -19,10 +19,7 @@ xmppAppender = (config, layout) ->
     console.log "XMPP client is connected as \
 #{data.jid.user}@#{data.jid.domain}/#{data.jid.resource}"
 
-    body = ''
-    for i in loggingEvents
-      body += layout(i) + '\n'
-
+    body = loggingEvents.map(layout).join('\n')
     loggingEvents = null
     send client, body
 
